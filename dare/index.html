@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title></title>
+    <style type="text/css">
+    #changeText
+    {
+        font-size: 40px;
+        height: 250px;
+    }
+    h2{
+        font-size: 40px;
+        color: #324658;
+        background-color: aliceblue;
+    }
+    body{
+        background-color: aliceblue;
+    }
+    .maindiv
+    {
+        display: flex;
+        flex-wrap: wrap;
+        height: 400px;
+    }
+    .container
+    {
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <div class="maindiv">
+        <div class="container" style="text-align:center;">
+            <h2>Here's your dare</h2>
+            <div id="changeText" ></div>
+            <h2>Take a screenshot!</h2>
+        </div>
+        <div id="sidebarright">
+
+
+
+        </div>
+        <div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var text = ["Send a voice note saying that You love me.", "Tell me something you always wanted to say but you couldn't","Give me a treat","Tell me a secret about you","Make my picture your dp for one day","Record three minutes clip, saying something about me and send me.","Take a picture of yourself & send it to me now","Sing One song for me","Like and comment on all my pics on Facebook","Write my name on your status saying you love me..!","Describe me with a single Movie name","What's your deepest secret?","Update your status with message 'I am stupid'"];
+    var counter = 0;
+    var elem = document.getElementById("changeText");
+    setInterval(change, 1);
+    function change() {
+        elem.innerHTML = text[counter];
+        counter++;
+        if(counter >= text.length) { counter = 0; }
+    }
+    </script>
+</body>
+</html>
